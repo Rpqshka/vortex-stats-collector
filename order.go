@@ -2,14 +2,6 @@ package vortex_stats_collector
 
 import "time"
 
-type OrderBook struct {
-	Id       uint         `json:"id"`
-	Exchange string       `json:"exchange"`
-	Pair     string       `json:"pair"`
-	Asks     []DepthOrder `json:"asks"`
-	Bids     []DepthOrder `json:"bids"`
-}
-
 type DepthOrder struct {
 	Price   float64 `json:"price"`
 	BaseQty float64 `json:"base_qty"`
